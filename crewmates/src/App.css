@@ -1,42 +1,376 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Main */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #121212;
+  color: #ffffff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.home-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-paragraph {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.home-image {
+  width: 300px;
+  margin-top: 2rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.home-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-paragraph {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.home-image {
+  width: 300px;
+  margin-top: 2rem;
+}
+
+/* Cretmates */
+.create-crewmate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.create-crewmate-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.create-crewmate-image {
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
+.create-crewmate-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-section {
+    background-color: #444;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-section label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-section input[type="text"],
+.form-section input[type="number"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.color-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.create-crewmate-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-crewmate-button:hover {
+    background-color: #555;
+}
+
+/* Gallery */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.crewmate-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+
+.crewmate-card {
+  background-color: #444;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.crewmate-card:hover {
+  transform: scale(1.05);
+}
+
+.crewmate-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.crewmate-card p {
+  margin: 0.5rem 0;
+  color: #e0e0e0;
+}
+
+/* Detail */
+.crewmate-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.form-section {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.update-button, .delete-button {
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.update-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-button {
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #2563eb;
+}
+
+.update-button {
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-button:hover {
+  background-color: #388e3c;
+}
+
+/* Cancel Button */
+.cancel-button {
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #9e9e9e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #757575;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.crewmate-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+
+.crewmate-card {
+  background-color: #444;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.crewmate-card:hover {
+  transform: scale(1.05);
+}
+
+.crewmate-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.form-section {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-section input[type="text"],
+.form-section input[type="number"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #666;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+      padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .crewmate-cards {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .crewmate-detail-container {
+      padding: 1rem;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .form-section input[type="text"],
+  .form-section input[type="number"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+  }
 
-.read-the-docs {
-  color: #888;
+  button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+  }
 }
