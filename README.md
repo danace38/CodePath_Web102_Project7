@@ -1,8 +1,8 @@
-# Web Development Project 7 - *Name of App Here*
+# Web Development Project 7 - *Danil Ermolin*
 
-Submitted by: **Your Name Here**
+Submitted by: **Crewmasters**
 
-This web app: **insert description**
+This web app: **A simple version of the web app that allows to add crewmates**
 
 Time spent: **X** hours spent in total
 
