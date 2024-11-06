@@ -31,6 +31,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+![Web102_project7](https://github.com/user-attachments/assets/57594e49-2009-4ae9-becc-d6454d62d3bb)
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif
