@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
-import crewmateImage from '../../public/amongcreate.png';
 
 function CreateCrewmate() {
   const [name, setName] = useState('');
@@ -33,7 +32,7 @@ function CreateCrewmate() {
   return (
     <div className="create-crewmate-container">
       <h1 className="create-crewmate-title">Create a New Crewmate</h1>
-      <img src={crewmateImage} alt="Crewmates" className="create-crewmate-image" />
+      {/* Removed the image */}
       <form onSubmit={handleSubmit} className="create-crewmate-form">
         <div className="form-section">
           <label htmlFor="name">Name:</label>
@@ -76,7 +75,7 @@ function CreateCrewmate() {
         <button type="submit" className="create-crewmate-button">Create Crewmate</button>
       </form>
     </div>
-  )
+  );
 }
 
 export default CreateCrewmate;

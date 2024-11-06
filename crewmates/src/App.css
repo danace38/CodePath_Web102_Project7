@@ -7,7 +7,7 @@
   text-align: center;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #121212;
+  background-color: rgb(15, 14, 14);
   color: #ffffff;
 }
 
@@ -35,8 +35,8 @@
   text-align: center;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #121212;
-  color: #ffffff;
+  background-color: rgb(180, 160, 160);
+  color: #020202;
 }
 
 .home-heading {
@@ -64,7 +64,7 @@
     text-align: center;
     min-height: 100vh;
     padding: 2rem;
-    background-color: #121212;
+    background-color: rgb(139, 159, 170);
     color: #ffffff;
 }
 
